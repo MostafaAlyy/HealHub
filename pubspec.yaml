@@ -55,6 +55,12 @@ dependencies:
   easy_localization: ^3.0.4
   # For splash screen
   flutter_native_splash: ^2.3.11
+  # For SVG rendering
+  flutter_svg: ^2.0.9
+  # For adaptive layout
+  flutter_screenutil: ^5.9.0
+  # For better object comparison
+  equatable: ^2.0.5
 
 dev_dependencies:
   flutter_test:
