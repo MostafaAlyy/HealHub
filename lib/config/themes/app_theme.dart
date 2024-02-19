@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:healhub/core/utils/app_colors.dart';
+import 'package:healhub/config/themes/app_colors.dart';
 import 'package:healhub/core/utils/app_strings.dart';
 
 ThemeData appTheme() {
