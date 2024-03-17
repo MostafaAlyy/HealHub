@@ -1,8 +1,8 @@
 import 'routes.dart';
 import 'package:flutter/material.dart';
 import '../../core/utils/app_strings.dart';
-import '../../features/login/presentation/pages/login_screen.dart';
-import '../../features/onboarding/presentation/pages/onboardind_screen.dart';
+import '../../features/login/ui/pages/login_screen.dart';
+import '../../features/onboarding/ui/pages/onboardind_screen.dart';
 
 class AppRouter {
   static Route onGenerateRoute(RouteSettings routeSettings) {
