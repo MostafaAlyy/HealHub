@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
+import '../../../../config/themes/text_styles.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:healhub/config/themes/text_styles.dart';
 
 class DoctorImageAndName extends StatelessWidget {
   const DoctorImageAndName({super.key});

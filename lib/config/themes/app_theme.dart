@@ -1,12 +1,10 @@
+import 'app_colors.dart';
 import 'package:flutter/material.dart';
-import 'package:healhub/config/themes/app_colors.dart';
 
 ThemeData appTheme() {
   return ThemeData(
-    primaryColor: AppColors.primaryColor,
-    hintColor: AppColors.hintColor,
+    primaryColor: AppColors.mainBlue,
     brightness: Brightness.light,
-    scaffoldBackgroundColor: AppColors.backgroundColor,
-    colorScheme: ColorScheme.fromSeed(seedColor: AppColors.primaryColor),
+    colorScheme: ColorScheme.fromSeed(seedColor: AppColors.mainBlue),
   );
 }

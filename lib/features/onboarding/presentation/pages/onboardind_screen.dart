@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
+import '../../../../config/themes/text_styles.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:healhub/config/themes/text_styles.dart';
-
-import 'package:healhub/features/onboarding/presentation/widgets/app_logo_and_name.dart';
-import 'package:healhub/features/onboarding/presentation/widgets/doctor_image_and_name.dart';
-import 'package:healhub/features/onboarding/presentation/widgets/get_started_button.dart';
+import '../widgets/app_logo_and_name.dart';
+import '../widgets/get_started_button.dart';
+import '../widgets/doctor_image_and_name.dart';
 
 class OnBoardingScreen extends StatelessWidget {
   const OnBoardingScreen({super.key});
@@ -27,7 +26,7 @@ class OnBoardingScreen extends StatelessWidget {
                 Text(
                   'Manage and schedule all of your medical appointments easily\nwith HealHub to get a new experience.',
                   textAlign: TextAlign.center,
-                  style: TextStyles.font12Grey400Wight,
+                  style: TextStyles.font12GreyRegular,
                 ),
                 SizedBox(
                   height: 30.h,

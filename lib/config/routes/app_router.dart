@@ -1,8 +1,8 @@
+import 'routes.dart';
 import 'package:flutter/material.dart';
-import 'package:healhub/config/routes/routes.dart';
-import 'package:healhub/core/utils/app_strings.dart';
-import 'package:healhub/features/login/presentation/pages/login_screen.dart';
-import 'package:healhub/features/onboarding/presentation/pages/onboardind_screen.dart';
+import '../../core/utils/app_strings.dart';
+import '../../features/login/presentation/pages/login_screen.dart';
+import '../../features/onboarding/presentation/pages/onboardind_screen.dart';
 
 class AppRouter {
   static Route onGenerateRoute(RouteSettings routeSettings) {

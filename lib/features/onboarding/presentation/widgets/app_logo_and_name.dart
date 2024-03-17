@@ -1,7 +1,7 @@
-import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:healhub/config/themes/text_styles.dart';
+import 'package:flutter/material.dart';
+import '../../../../config/themes/text_styles.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class AppLogoAndName extends StatelessWidget {
   const AppLogoAndName({
@@ -17,7 +17,7 @@ class AppLogoAndName extends StatelessWidget {
         SizedBox(width: 10.w),
         Text(
           'HealHub',
-          style: TextStyles.font24Black700Wight,
+          style: TextStyles.font24BlackBold,
         ),
       ],
     );

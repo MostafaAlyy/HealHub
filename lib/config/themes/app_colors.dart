@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:healhub/core/utils/hex_colors.dart';
+import '../../core/utils/hex_colors.dart';
 
 class AppColors {
-  static Color primaryColor = HexColor("#247CFF");
-  static const Color hintColor = Colors.grey;
-  static Color appBarTitleColor = HexColor("#FFFDD0");
-  static Color backgroundColor = Colors.white;
-  static Color secondaryColor = HexColor("#474634");
+  static Color mainBlue = HexColor("#247CFF");
+  static Color darkBlue = HexColor("#242424");
+
+  static Color grey = HexColor('#757575');
+  static Color lightGray = HexColor("#C2C2C2");
+  static Color lighterGray = HexColor('#EDEDED');
+  static Color moreLightGray = HexColor('#FDFDFF');
 }

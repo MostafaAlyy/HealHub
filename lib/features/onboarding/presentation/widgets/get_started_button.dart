@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
+import '../../../../config/routes/routes.dart';
+import '../../../../config/themes/app_colors.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:healhub/config/routes/routes.dart';
-import 'package:healhub/config/themes/app_colors.dart';
-import 'package:healhub/core/helpers/navigation_extension.dart';
+import '../../../../core/helpers/navigation_extension.dart';
 
 class GetStartedButton extends StatelessWidget {
   const GetStartedButton({
@@ -16,7 +16,7 @@ class GetStartedButton extends StatelessWidget {
         context.pushNamed(Routes.loginRoute);
       },
       style: ElevatedButton.styleFrom(
-        backgroundColor: AppColors.primaryColor,
+        backgroundColor: AppColors.mainBlue,
         minimumSize: Size(311.w, 52.h),
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(16.0),
