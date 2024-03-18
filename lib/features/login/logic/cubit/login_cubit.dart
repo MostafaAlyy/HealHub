@@ -11,8 +11,10 @@ class LoginCubit extends Cubit<LoginState> {
   TextEditingController emailController = TextEditingController();
   TextEditingController passwordController = TextEditingController();
   final formKey = GlobalKey<FormState>();
+  bool isObscureText = true;
 
   void login(LoginRequestBody loginRequestBody) async {
+    emit(const LoginState.loading());
     final response = await _loginRepo.login(loginRequestBody);
     response.when(success: (loginResponse) {
       emit(LoginState.success(loginResponse));
@@ -20,4 +22,15 @@ class LoginCubit extends Cubit<LoginState> {
       emit(LoginState.error(error: error.apiErrorModel.message ?? ""));
     });
   }
+
+  void togglePasswordVisibility() {
+    isObscureText = !isObscureText;
+    if (isObscureText) {
+      emit(const LoginState.passwordVisible());
+    } else {
+      emit(const LoginState.passwordHidden());
+    }
+  }
+
+  void emitLoginStates(LoginRequestBody loginRequestBody) {}
 }

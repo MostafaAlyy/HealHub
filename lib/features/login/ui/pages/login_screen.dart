@@ -1,15 +1,20 @@
+import 'package:flutter_bloc/flutter_bloc.dart';
+
+import '../../data/models/login_request_body.dart';
+import '../../logic/cubit/login_cubit.dart';
+import '../widgets/login_bloc_listener.dart';
 import '../widgets/welcome_text.dart';
 import 'package:flutter/material.dart';
 import '../widgets/terms_ans_conditions.dart';
 import '../widgets/dont_have_account_text.dart';
 import '../../../../config/themes/text_styles.dart';
 import '../../../../core/widgets/app_text_button.dart';
-import '../../../../core/widgets/app_text_form_field.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import '../../../../core/widgets/email_ans_password_enter.dart';
+import '../widgets/email_ans_password_enter.dart';
 
 class LogInScreen extends StatelessWidget {
   const LogInScreen({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -42,7 +47,9 @@ class LogInScreen extends StatelessWidget {
                 AppTextButton(
                   buttonText: "Login",
                   textStyle: TextStyles.font16WhiteSemiBold,
-                  onPressed: () {},
+                  onPressed: () {
+                    validateThenDoLogin(context);
+                  },
                 ),
                 SizedBox(
                   height: 16.h,
@@ -52,11 +59,23 @@ class LogInScreen extends StatelessWidget {
                   height: 60.h,
                 ),
                 const DoNotHaveAccountText(),
+                const LoginBlocListener(),
               ],
             ),
           ),
         ),
       ),
     );
+  }
+
+  void validateThenDoLogin(BuildContext context) {
+    if (context.read<LoginCubit>().formKey.currentState!.validate()) {
+      context.read<LoginCubit>().login(
+            LoginRequestBody(
+              email: context.read<LoginCubit>().emailController.text,
+              password: context.read<LoginCubit>().passwordController.text,
+            ),
+          );
+    }
   }
 }

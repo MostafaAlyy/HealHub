@@ -22,6 +22,8 @@ mixin _$LoginState<T> {
     required TResult Function() loading,
     required TResult Function(T data) success,
     required TResult Function(String error) error,
+    required TResult Function() passwordHidden,
+    required TResult Function() passwordVisible,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -30,6 +32,8 @@ mixin _$LoginState<T> {
     TResult? Function()? loading,
     TResult? Function(T data)? success,
     TResult? Function(String error)? error,
+    TResult? Function()? passwordHidden,
+    TResult? Function()? passwordVisible,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -38,6 +42,8 @@ mixin _$LoginState<T> {
     TResult Function()? loading,
     TResult Function(T data)? success,
     TResult Function(String error)? error,
+    TResult Function()? passwordHidden,
+    TResult Function()? passwordVisible,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -47,6 +53,8 @@ mixin _$LoginState<T> {
     required TResult Function(Loading<T> value) loading,
     required TResult Function(Success<T> value) success,
     required TResult Function(Error<T> value) error,
+    required TResult Function(PasswordHidden<T> value) passwordHidden,
+    required TResult Function(PasswordVisible<T> value) passwordVisible,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -55,6 +63,8 @@ mixin _$LoginState<T> {
     TResult? Function(Loading<T> value)? loading,
     TResult? Function(Success<T> value)? success,
     TResult? Function(Error<T> value)? error,
+    TResult? Function(PasswordHidden<T> value)? passwordHidden,
+    TResult? Function(PasswordVisible<T> value)? passwordVisible,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -63,6 +73,8 @@ mixin _$LoginState<T> {
     TResult Function(Loading<T> value)? loading,
     TResult Function(Success<T> value)? success,
     TResult Function(Error<T> value)? error,
+    TResult Function(PasswordHidden<T> value)? passwordHidden,
+    TResult Function(PasswordVisible<T> value)? passwordVisible,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -128,6 +140,8 @@ class _$InitialImpl<T> implements _Initial<T> {
     required TResult Function() loading,
     required TResult Function(T data) success,
     required TResult Function(String error) error,
+    required TResult Function() passwordHidden,
+    required TResult Function() passwordVisible,
   }) {
     return initial();
   }
@@ -139,6 +153,8 @@ class _$InitialImpl<T> implements _Initial<T> {
     TResult? Function()? loading,
     TResult? Function(T data)? success,
     TResult? Function(String error)? error,
+    TResult? Function()? passwordHidden,
+    TResult? Function()? passwordVisible,
   }) {
     return initial?.call();
   }
@@ -150,6 +166,8 @@ class _$InitialImpl<T> implements _Initial<T> {
     TResult Function()? loading,
     TResult Function(T data)? success,
     TResult Function(String error)? error,
+    TResult Function()? passwordHidden,
+    TResult Function()? passwordVisible,
     required TResult orElse(),
   }) {
     if (initial != null) {
@@ -165,6 +183,8 @@ class _$InitialImpl<T> implements _Initial<T> {
     required TResult Function(Loading<T> value) loading,
     required TResult Function(Success<T> value) success,
     required TResult Function(Error<T> value) error,
+    required TResult Function(PasswordHidden<T> value) passwordHidden,
+    required TResult Function(PasswordVisible<T> value) passwordVisible,
   }) {
     return initial(this);
   }
@@ -176,6 +196,8 @@ class _$InitialImpl<T> implements _Initial<T> {
     TResult? Function(Loading<T> value)? loading,
     TResult? Function(Success<T> value)? success,
     TResult? Function(Error<T> value)? error,
+    TResult? Function(PasswordHidden<T> value)? passwordHidden,
+    TResult? Function(PasswordVisible<T> value)? passwordVisible,
   }) {
     return initial?.call(this);
   }
@@ -187,6 +209,8 @@ class _$InitialImpl<T> implements _Initial<T> {
     TResult Function(Loading<T> value)? loading,
     TResult Function(Success<T> value)? success,
     TResult Function(Error<T> value)? error,
+    TResult Function(PasswordHidden<T> value)? passwordHidden,
+    TResult Function(PasswordVisible<T> value)? passwordVisible,
     required TResult orElse(),
   }) {
     if (initial != null) {
@@ -242,6 +266,8 @@ class _$LoadingImpl<T> implements Loading<T> {
     required TResult Function() loading,
     required TResult Function(T data) success,
     required TResult Function(String error) error,
+    required TResult Function() passwordHidden,
+    required TResult Function() passwordVisible,
   }) {
     return loading();
   }
@@ -253,6 +279,8 @@ class _$LoadingImpl<T> implements Loading<T> {
     TResult? Function()? loading,
     TResult? Function(T data)? success,
     TResult? Function(String error)? error,
+    TResult? Function()? passwordHidden,
+    TResult? Function()? passwordVisible,
   }) {
     return loading?.call();
   }
@@ -264,6 +292,8 @@ class _$LoadingImpl<T> implements Loading<T> {
     TResult Function()? loading,
     TResult Function(T data)? success,
     TResult Function(String error)? error,
+    TResult Function()? passwordHidden,
+    TResult Function()? passwordVisible,
     required TResult orElse(),
   }) {
     if (loading != null) {
@@ -279,6 +309,8 @@ class _$LoadingImpl<T> implements Loading<T> {
     required TResult Function(Loading<T> value) loading,
     required TResult Function(Success<T> value) success,
     required TResult Function(Error<T> value) error,
+    required TResult Function(PasswordHidden<T> value) passwordHidden,
+    required TResult Function(PasswordVisible<T> value) passwordVisible,
   }) {
     return loading(this);
   }
@@ -290,6 +322,8 @@ class _$LoadingImpl<T> implements Loading<T> {
     TResult? Function(Loading<T> value)? loading,
     TResult? Function(Success<T> value)? success,
     TResult? Function(Error<T> value)? error,
+    TResult? Function(PasswordHidden<T> value)? passwordHidden,
+    TResult? Function(PasswordVisible<T> value)? passwordVisible,
   }) {
     return loading?.call(this);
   }
@@ -301,6 +335,8 @@ class _$LoadingImpl<T> implements Loading<T> {
     TResult Function(Loading<T> value)? loading,
     TResult Function(Success<T> value)? success,
     TResult Function(Error<T> value)? error,
+    TResult Function(PasswordHidden<T> value)? passwordHidden,
+    TResult Function(PasswordVisible<T> value)? passwordVisible,
     required TResult orElse(),
   }) {
     if (loading != null) {
@@ -383,6 +419,8 @@ class _$SuccessImpl<T> implements Success<T> {
     required TResult Function() loading,
     required TResult Function(T data) success,
     required TResult Function(String error) error,
+    required TResult Function() passwordHidden,
+    required TResult Function() passwordVisible,
   }) {
     return success(data);
   }
@@ -394,6 +432,8 @@ class _$SuccessImpl<T> implements Success<T> {
     TResult? Function()? loading,
     TResult? Function(T data)? success,
     TResult? Function(String error)? error,
+    TResult? Function()? passwordHidden,
+    TResult? Function()? passwordVisible,
   }) {
     return success?.call(data);
   }
@@ -405,6 +445,8 @@ class _$SuccessImpl<T> implements Success<T> {
     TResult Function()? loading,
     TResult Function(T data)? success,
     TResult Function(String error)? error,
+    TResult Function()? passwordHidden,
+    TResult Function()? passwordVisible,
     required TResult orElse(),
   }) {
     if (success != null) {
@@ -420,6 +462,8 @@ class _$SuccessImpl<T> implements Success<T> {
     required TResult Function(Loading<T> value) loading,
     required TResult Function(Success<T> value) success,
     required TResult Function(Error<T> value) error,
+    required TResult Function(PasswordHidden<T> value) passwordHidden,
+    required TResult Function(PasswordVisible<T> value) passwordVisible,
   }) {
     return success(this);
   }
@@ -431,6 +475,8 @@ class _$SuccessImpl<T> implements Success<T> {
     TResult? Function(Loading<T> value)? loading,
     TResult? Function(Success<T> value)? success,
     TResult? Function(Error<T> value)? error,
+    TResult? Function(PasswordHidden<T> value)? passwordHidden,
+    TResult? Function(PasswordVisible<T> value)? passwordVisible,
   }) {
     return success?.call(this);
   }
@@ -442,6 +488,8 @@ class _$SuccessImpl<T> implements Success<T> {
     TResult Function(Loading<T> value)? loading,
     TResult Function(Success<T> value)? success,
     TResult Function(Error<T> value)? error,
+    TResult Function(PasswordHidden<T> value)? passwordHidden,
+    TResult Function(PasswordVisible<T> value)? passwordVisible,
     required TResult orElse(),
   }) {
     if (success != null) {
@@ -528,6 +576,8 @@ class _$ErrorImpl<T> implements Error<T> {
     required TResult Function() loading,
     required TResult Function(T data) success,
     required TResult Function(String error) error,
+    required TResult Function() passwordHidden,
+    required TResult Function() passwordVisible,
   }) {
     return error(this.error);
   }
@@ -539,6 +589,8 @@ class _$ErrorImpl<T> implements Error<T> {
     TResult? Function()? loading,
     TResult? Function(T data)? success,
     TResult? Function(String error)? error,
+    TResult? Function()? passwordHidden,
+    TResult? Function()? passwordVisible,
   }) {
     return error?.call(this.error);
   }
@@ -550,6 +602,8 @@ class _$ErrorImpl<T> implements Error<T> {
     TResult Function()? loading,
     TResult Function(T data)? success,
     TResult Function(String error)? error,
+    TResult Function()? passwordHidden,
+    TResult Function()? passwordVisible,
     required TResult orElse(),
   }) {
     if (error != null) {
@@ -565,6 +619,8 @@ class _$ErrorImpl<T> implements Error<T> {
     required TResult Function(Loading<T> value) loading,
     required TResult Function(Success<T> value) success,
     required TResult Function(Error<T> value) error,
+    required TResult Function(PasswordHidden<T> value) passwordHidden,
+    required TResult Function(PasswordVisible<T> value) passwordVisible,
   }) {
     return error(this);
   }
@@ -576,6 +632,8 @@ class _$ErrorImpl<T> implements Error<T> {
     TResult? Function(Loading<T> value)? loading,
     TResult? Function(Success<T> value)? success,
     TResult? Function(Error<T> value)? error,
+    TResult? Function(PasswordHidden<T> value)? passwordHidden,
+    TResult? Function(PasswordVisible<T> value)? passwordVisible,
   }) {
     return error?.call(this);
   }
@@ -587,6 +645,8 @@ class _$ErrorImpl<T> implements Error<T> {
     TResult Function(Loading<T> value)? loading,
     TResult Function(Success<T> value)? success,
     TResult Function(Error<T> value)? error,
+    TResult Function(PasswordHidden<T> value)? passwordHidden,
+    TResult Function(PasswordVisible<T> value)? passwordVisible,
     required TResult orElse(),
   }) {
     if (error != null) {
@@ -603,4 +663,256 @@ abstract class Error<T> implements LoginState<T> {
   @JsonKey(ignore: true)
   _$$ErrorImplCopyWith<T, _$ErrorImpl<T>> get copyWith =>
       throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class _$$PasswordHiddenImplCopyWith<T, $Res> {
+  factory _$$PasswordHiddenImplCopyWith(_$PasswordHiddenImpl<T> value,
+          $Res Function(_$PasswordHiddenImpl<T>) then) =
+      __$$PasswordHiddenImplCopyWithImpl<T, $Res>;
+}
+
+/// @nodoc
+class __$$PasswordHiddenImplCopyWithImpl<T, $Res>
+    extends _$LoginStateCopyWithImpl<T, $Res, _$PasswordHiddenImpl<T>>
+    implements _$$PasswordHiddenImplCopyWith<T, $Res> {
+  __$$PasswordHiddenImplCopyWithImpl(_$PasswordHiddenImpl<T> _value,
+      $Res Function(_$PasswordHiddenImpl<T>) _then)
+      : super(_value, _then);
+}
+
+/// @nodoc
+
+class _$PasswordHiddenImpl<T> implements PasswordHidden<T> {
+  const _$PasswordHiddenImpl();
+
+  @override
+  String toString() {
+    return 'LoginState<$T>.passwordHidden()';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$PasswordHiddenImpl<T>);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() initial,
+    required TResult Function() loading,
+    required TResult Function(T data) success,
+    required TResult Function(String error) error,
+    required TResult Function() passwordHidden,
+    required TResult Function() passwordVisible,
+  }) {
+    return passwordHidden();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? loading,
+    TResult? Function(T data)? success,
+    TResult? Function(String error)? error,
+    TResult? Function()? passwordHidden,
+    TResult? Function()? passwordVisible,
+  }) {
+    return passwordHidden?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? initial,
+    TResult Function()? loading,
+    TResult Function(T data)? success,
+    TResult Function(String error)? error,
+    TResult Function()? passwordHidden,
+    TResult Function()? passwordVisible,
+    required TResult orElse(),
+  }) {
+    if (passwordHidden != null) {
+      return passwordHidden();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_Initial<T> value) initial,
+    required TResult Function(Loading<T> value) loading,
+    required TResult Function(Success<T> value) success,
+    required TResult Function(Error<T> value) error,
+    required TResult Function(PasswordHidden<T> value) passwordHidden,
+    required TResult Function(PasswordVisible<T> value) passwordVisible,
+  }) {
+    return passwordHidden(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_Initial<T> value)? initial,
+    TResult? Function(Loading<T> value)? loading,
+    TResult? Function(Success<T> value)? success,
+    TResult? Function(Error<T> value)? error,
+    TResult? Function(PasswordHidden<T> value)? passwordHidden,
+    TResult? Function(PasswordVisible<T> value)? passwordVisible,
+  }) {
+    return passwordHidden?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_Initial<T> value)? initial,
+    TResult Function(Loading<T> value)? loading,
+    TResult Function(Success<T> value)? success,
+    TResult Function(Error<T> value)? error,
+    TResult Function(PasswordHidden<T> value)? passwordHidden,
+    TResult Function(PasswordVisible<T> value)? passwordVisible,
+    required TResult orElse(),
+  }) {
+    if (passwordHidden != null) {
+      return passwordHidden(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class PasswordHidden<T> implements LoginState<T> {
+  const factory PasswordHidden() = _$PasswordHiddenImpl<T>;
+}
+
+/// @nodoc
+abstract class _$$PasswordVisibleImplCopyWith<T, $Res> {
+  factory _$$PasswordVisibleImplCopyWith(_$PasswordVisibleImpl<T> value,
+          $Res Function(_$PasswordVisibleImpl<T>) then) =
+      __$$PasswordVisibleImplCopyWithImpl<T, $Res>;
+}
+
+/// @nodoc
+class __$$PasswordVisibleImplCopyWithImpl<T, $Res>
+    extends _$LoginStateCopyWithImpl<T, $Res, _$PasswordVisibleImpl<T>>
+    implements _$$PasswordVisibleImplCopyWith<T, $Res> {
+  __$$PasswordVisibleImplCopyWithImpl(_$PasswordVisibleImpl<T> _value,
+      $Res Function(_$PasswordVisibleImpl<T>) _then)
+      : super(_value, _then);
+}
+
+/// @nodoc
+
+class _$PasswordVisibleImpl<T> implements PasswordVisible<T> {
+  const _$PasswordVisibleImpl();
+
+  @override
+  String toString() {
+    return 'LoginState<$T>.passwordVisible()';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$PasswordVisibleImpl<T>);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() initial,
+    required TResult Function() loading,
+    required TResult Function(T data) success,
+    required TResult Function(String error) error,
+    required TResult Function() passwordHidden,
+    required TResult Function() passwordVisible,
+  }) {
+    return passwordVisible();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? loading,
+    TResult? Function(T data)? success,
+    TResult? Function(String error)? error,
+    TResult? Function()? passwordHidden,
+    TResult? Function()? passwordVisible,
+  }) {
+    return passwordVisible?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? initial,
+    TResult Function()? loading,
+    TResult Function(T data)? success,
+    TResult Function(String error)? error,
+    TResult Function()? passwordHidden,
+    TResult Function()? passwordVisible,
+    required TResult orElse(),
+  }) {
+    if (passwordVisible != null) {
+      return passwordVisible();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_Initial<T> value) initial,
+    required TResult Function(Loading<T> value) loading,
+    required TResult Function(Success<T> value) success,
+    required TResult Function(Error<T> value) error,
+    required TResult Function(PasswordHidden<T> value) passwordHidden,
+    required TResult Function(PasswordVisible<T> value) passwordVisible,
+  }) {
+    return passwordVisible(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_Initial<T> value)? initial,
+    TResult? Function(Loading<T> value)? loading,
+    TResult? Function(Success<T> value)? success,
+    TResult? Function(Error<T> value)? error,
+    TResult? Function(PasswordHidden<T> value)? passwordHidden,
+    TResult? Function(PasswordVisible<T> value)? passwordVisible,
+  }) {
+    return passwordVisible?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_Initial<T> value)? initial,
+    TResult Function(Loading<T> value)? loading,
+    TResult Function(Success<T> value)? success,
+    TResult Function(Error<T> value)? error,
+    TResult Function(PasswordHidden<T> value)? passwordHidden,
+    TResult Function(PasswordVisible<T> value)? passwordVisible,
+    required TResult orElse(),
+  }) {
+    if (passwordVisible != null) {
+      return passwordVisible(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class PasswordVisible<T> implements LoginState<T> {
+  const factory PasswordVisible() = _$PasswordVisibleImpl<T>;
 }

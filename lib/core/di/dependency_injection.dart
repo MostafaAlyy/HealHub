@@ -15,5 +15,5 @@ Future<void> serviceLocatorInit() async {
 
   // Login
   sl.registerLazySingleton<LoginRepo>(() => LoginRepo(sl()));
-  sl.registerLazySingleton<LoginCubit>(() => LoginCubit(sl()));
+  sl.registerFactory<LoginCubit>(() => LoginCubit(sl()));
 }

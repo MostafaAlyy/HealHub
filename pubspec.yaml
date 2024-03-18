@@ -53,6 +53,10 @@ dependencies:
   flutter_screenutil: ^5.9.0
   # For better object comparison
   equatable: ^2.0.5
+  # A highly customizable password control input widget. It has features such as password strength and rules validation
+  fancy_password_field: ^2.0.6
+  # Bar indicator made of a series of selected and unselected steps
+  step_progress_indicator: ^1.0.2
 
 dev_dependencies:
   flutter_test:
