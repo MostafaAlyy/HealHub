@@ -1,6 +1,6 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
 import '../../core/di/dependency_injection.dart';
-import '../../features/home/ui/pages/homa_page.dart';
+import '../../features/home/ui/pages/home_page.dart';
 import '../../features/login/logic/cubit/login_cubit.dart';
 import 'routes.dart';
 import 'package:flutter/material.dart';
